@@ -39,15 +39,12 @@ double average(const int scores[], int n) { // Return function that will still c
 
 void officeHours(const int scores[], int n, int* failingCount) { // Void function that is passing by pointer this time in parameter failingcount
   if (n <= 0 || scores == nullptr) return; // Conditional uses || which means "or" . Both these lines of code are just ensuring that if the failingcount is inconslusive, we exit function for that student of office hours
-  // TODO: while loop. If scores[i] is under 60, print:
   for (int i = 0; i < n; i++) // Wasn't able to get a while loop for this loop
    if (scores[i] < 60) 
    { 
     cout << "Student at index " << i << " needs to come to office hours" << endl;
     if (failingCount != nullptr) *failingCount = *failingCount + 1; } // Here, we are saying that if the failigcount actually points somewhere, we are going to add one to that count for when we call it later and how many students
    
-  // Student at index i needs to come to office hours.
-  // If failingCount is not nullptr, write how many lines you printed through *failingCount. If it is nullptr, do not write through it.
 }
 
 int main() { // INT MAIN FUNCITON THAT WILL BE USED TO CALL ALL FUNCTIONS AND RUN THE FUNCTIONS WHENEVER WE WANT TO USE THEM IN THE ORDER
