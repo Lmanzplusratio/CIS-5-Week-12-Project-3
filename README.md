@@ -1,5 +1,6 @@
 # Project 3 · Fifty students
 
+README SHORT EXPLAINATION: The three functions being countgrades, double average, officehours. Countgrades is passing by reference here to save the computation we did inside the function so whenever we called to main it is there, this is also just an alias too. Double Average returns a double sum at the end for the function whenever we call it in main. OfficeHours is pass by pointer and this computes the office hours count. This gives over the orginal "key" so we can change and affect the amount whenever by dereferencing it. 
 
 ## Demo video (required)
 
